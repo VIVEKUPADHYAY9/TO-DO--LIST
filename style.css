@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(60deg,#401818,#6398d4);
+
+}
+#box{
+    position: relative;
+    width: 450px;
+    height: 550px;
+
+    /* background: #2f363e; */
+    background: linear-gradient(35deg,#97c43d,#20bcb7);
+    box-shadow: 25px 25px 75px rgb(192, 97, 175),
+     10px 70px rgb(190, 125, 59),
+    inset 5px10px 5px 10px rgb(94,48,3),
+    inset 5px 5px 10px rgb(132, 98, 63),
+    inset -5px -5px 15px rgb(135, 90, 45);
+    border-radius: 30px;
+    padding: 30px 50px;
+
+
+}
+h2{
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    font-size: 1.75sem;
+    margin-bottom: 13px;
+
+}
+#input-box{
+    position: relative;
+     width: 100%;
+     border: none;
+     outline: none;
+     padding: 15px 20px;
+     border-radius: 30px;
+     font-size: 1em;
+     box-shadow:  5px 5px 7px rgb(153, 181, 29),
+     inset 2px 2px 5px  rgb(220, 64, 176),
+     inset -3px -3px 5px rgb(220, 133, 45);
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color:#fff;
+    cursor: pointer;
+    border-radius: 30px;
+     margin-top: 10px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+
+
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    /* background-image: url(unchecked.png) */
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+    
+}
+ul li.checked::before{
+    background-image: url(images/checked.png);
+
+}
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 6vh;
+    color: #040101;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background:rgba(228, 11, 11, 0.87);
+    }
